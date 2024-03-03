@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Web design tutorial</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    </head>
+    <body >
+        <header>
+            <div id="navbar"  class="container">
+                <a href="#" class="brand-logo" >RedEx</a>
+                <ul class="navbar">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Shop</a>
+                        <ul class="submenu">
+                            <li class="submenu-item">Fruits</li>
+                            <li class="submenu-item">vegetable</li>
+                            <li class="submenu-item">Beverage</li>
+                            <li class="submenu-item">Organic</li>
+                        </ul>
+                    </li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">About</a></li>
+                    <li class="add-cart"><i class="fas fa-shopping-bag"></i></li>
+
+                </ul>
+                <div class="social-link">
+                    <span>Follow</span>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+
+               </div>
+
+            </div>
+        </header>
+
+        <!--hero section-->
+        <div class=" hero-section">
+            <div class="hero-content">
+                <span>For healthy life</span>
+                <h2>Apple cedar vinger</h2>
+                <h5>GET UP TO 50% </h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptates cumque quae nostrum rerum alias consectetur porro eos doloremque eaque.</p>
+                <button class="btn1">Buy Now</button>
+                <button class="btn2">See more</button>
+            </div>
+        </div>
+
+        <!--Categories section-->
+        <div id="Categories">
+            <div class="contain">
+                <h2 class="section-title"> Categories</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="card-img">
+                            <img src="photo/beverage.png" width="100%" height="100%">
+                        </div>
+                        <div class="card-content">
+                            <h5>Beverage</h5>
+                            <span>(50)</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-img">
+                            <img src="photo/frut.png" width="100%" height="100%">
+                        </div>
+                        <div class="card-content">
+                            <h5>Fruits</h5>
+                            <span>(70)</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-img">
+                            <img src="photo/veg.png" width="100%" height="100%">
+                        </div>
+                        <div class="card-content">
+                            <h5>Vegetable
+                            </h5>
+                            <span>(30)</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-img">
+                            <img src="photo/1588024.png" width="100%" height="100%">
+                        </div>
+                        <div class="card-content">
+                            <h5>Organic</h5>
+                            <span>(60)</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-img">
+                            <img src="photo/choco.png" width="100%" height="100%">
+                        </div>
+                        <div class="card-content">
+                            <h5>Chocolates</h5>
+                            <span>(80)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Featered product-->
+        <section id="featured-product">
+            <div class="contain">
+                <div class="featured-row">
+                    <ul class="featured-col">
+                        <li class="tablink" onclick="content('Fruits', this)" >Fruits</li>
+                        <li class="tablink" onclick="content('Vegetable', this)">Vegetable</li>
+                        <li class="tablink" onclick="content('Organic', this)" id="active">Organic</li>
+                    </ul>
+                    <h1 class="featured-title"> Featured product</h1>
+                    <ul class="featured-col">
+                        <li class="tablink" onclick="content('Chocolates', this)">Chocolates</li>
+                        <li class="tablink" onclick="content('Beverage', this)">Beverage</li>
+                        <li class="tablink" onclick="content('Others', this)">Others</li>
+                    </ul>
+                </div>
+                <div class="tabcontent" id='Fruits'>
+                    <div class="product-row">
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/lemon.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/avacado.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-price"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/banana.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-price"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/papeya.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-price"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tabcontent" id='Vegetable'>
+                    <div class="product-row">
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/seem.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/brocoli.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Kolyflower.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Tomato.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabcontent" id='Organic'>
+                    <div class="product-row">
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Onion.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/garlic.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Organic.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Pistachio.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-row">
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Onion.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/garlic.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Organic.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Pistachio.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabcontent" id='Chocolates'>
+                    <div class="product-row">
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Kitkat.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Katbarry.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Cholcolate.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/Dairymilk.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabcontent" id='Beverage'>
+                    <div class="product-row">
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/lemon.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/avacado.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/banana.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/papeya.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabcontent" id='Others'>
+                    <div class="product-row">
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/lemon.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/avacado.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/banana.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-col">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="photo/product-img/papeya.jpg" width="100%" height="100%" alt="">
+                                    <button class="wishlist">Wishlist</button>
+                                    <button class="cart">Add cart</button>
+                                </div>
+                                <div class="card_content">
+                                    <span class="product-title">Lemon</span>
+                                    <span class="product-title"><strong>Price : </strong> 100$</span>
+                                </div>
+                            </div>
+                            <div class="hover-content">
+                                <div class="hover-elemnt">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fab fa-searchengin"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--pakege section-->
+        <section id='pakege'>
+            <div class="contain">
+                <div class="pakege-row">
+                    <div class="pakege-col">
+                        <h5 class="subtitle">Keep your good <span>Healthy</span></h5>
+                        <h2 class="title">Fresh fruits</h2>
+                        <h4 class="subtitle-2">BUY 1 GET 1 FREE</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, odit. Beatae deserunt rem suscipit. Possimus sint laborum, maxime doloremque nesciunt excepturi quasi molestiae tempore rerum quam, nostrum corrupti. Voluptatibus, aspernatur.</p>
+                        <button class="pakege-btn">SHOP NOW</button>
+                    </div>
+                    <div class="pakege-col">
+                        <img src="photo/hero-veg.jpg" width="100%" height="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--best seller section-->
+
+        <section id="best-sale">
+            <div class="contain">
+                <div class="seller-row">
+                    <div class="seller-col">
+                        <div class="seller-sub-col">
+                            <h2>New Arrival</h2>
+                        <div class="slide-icon">
+                            <i onclick="secondContent('1stpage',this)" id="active-2" class="fas fa-angle-left"></i>
+                            <i onclick="secondContent('2ndpage',this)" class="fas fa-angle-right"></i>
+                        </div>
+                        </div>
+                        <div class="tab_content" id="1stpage">
+                            <h1> first page</h1>
+
+                        </div>
+                        <div class="tab_content" id="2ndpage">
+                            <h1> second page</h1>
+
+                        </div>
+                    </div>
+                    <div class="seller-col">
+                       <div class="seller-sub-col">
+                        <h2>Best seller</h2>
+                        <div class="slide-icon">
+                            <i class="fas fa-angle-left"></i>
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="seller-col">
+                      <div class="seller-sub-col">
+                        <h2>Sale of product</h2>
+                        <div class="slide-icon">
+                            <i class="fas fa-angle-left"></i>
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="select">
+            <div class="select-product">
+
+            </div>
+        </div>
+
+
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+
+
+    </body>
+</html>
